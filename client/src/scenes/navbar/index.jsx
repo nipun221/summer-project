@@ -13,7 +13,6 @@ import {
 import {
     Search,
     Message,
-    DrakMode,
     LightMode,
     Notifications,
     Help,
@@ -60,18 +59,18 @@ const NavBar = () => {
             {/* Title */}
             <FlexBetween>
                 <Typography 
-                fontWeight="bold" 
-                fontSize="clamp(2rem, 3.5rem, 5rem)"
-                color="primary"
-                onClick={() => navigate("/home")}
-                sx={{
-                    "&:hover": {
-                        color: primaryLight,
-                        cursor: "pointer",
-                    },
-                }}
+                    fontWeight="bold" 
+                    fontSize="clamp(2rem, 3.5rem, 5rem)"
+                    color="primary"
+                    onClick={() => navigate("/home")}
+                    sx={{
+                        "&:hover": {
+                            color: primaryLight,
+                            cursor: "pointer",
+                        },
+                    }}
                 >
-                    THE OPEN CLOG
+                    THE SOCIAL DUMP
                 </Typography>
             </FlexBetween>
 
@@ -119,6 +118,7 @@ const NavBar = () => {
                 </IconButton>
             )}
 
+            {/* Mobile Nav */}
             {!isNonMobileScreens && isMobileMenuToggled && (
                 <Box
                     position="fixed"
@@ -140,9 +140,9 @@ const NavBar = () => {
                     <FlexBetween display="flex" flexDirection="column" justifyContent="center" alignItems="center" gap="3rem">
                     <IconButton onClick={() => dispatch(setMode())}>
                         {theme.palette.mode === "dark" ? (
-                            <DarkMode sx={{ fontSize: "25px" }} />
+                            <LightMode sx={{ fontSize: "25px" }} />
                         ) : (
-                            <LightMode sx={{ color: dark, fontSize: "25px" }} />
+                            <DarkMode sx={{ color: dark, fontSize: "25px" }} />
                         )}
                     </IconButton>
                     <Message sx={{ fontSize: "25px" }} />
