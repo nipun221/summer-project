@@ -195,10 +195,10 @@ const Form = () => {
                                     >
                                         {({ getRootProps, getInputProps }) => (
                                             <Box
-                                            {...getRootProps()}
-                                            border={`2px dashed ${"#ff79c6"}`}
-                                            p="1rem"
-                                            sx={{ "&:hover": { cursor: "pointer" } }}
+                                                {...getRootProps()}
+                                                border={`2px dashed ${"#ff79c6"}`}
+                                                p="1rem"
+                                                sx={{ "&:hover": { cursor: "pointer" } }}
                                             >
                                                 <input {...getInputProps} />
                                                 {!values.picture ? (
@@ -250,7 +250,7 @@ const Form = () => {
                                 fontSize: "1.5rem",
                                 backgroundColor: "#ff79c6",
                                 color: palette.background.alt,
-                                "&:hover": { color: "#ff79c6" }
+                                "&:hover": { color: "#ff79c6", backgroundColor: "#44475a", fontSize: "1.8rem" }
                             }}
                         >
                             {isLogin ? "LOGIN" : "REGISTER"}
