@@ -196,7 +196,7 @@ const Form = () => {
                                         {({ getRootProps, getInputProps }) => (
                                             <Box
                                             {...getRootProps()}
-                                            border={`2px dashed ${palette.primary.main}`}
+                                            border={`2px dashed ${"#ff79c6"}`}
                                             p="1rem"
                                             sx={{ "&:hover": { cursor: "pointer" } }}
                                             >
@@ -237,34 +237,39 @@ const Form = () => {
                             helperText={touched.password && errors.password}
                             sx={{ gridColumn: "span 4" }}
                         />
-
+                        
                         <Button
                             fullWidth
+                            variant="contained"
                             type="submit"
                             sx={{
-                                m: "1rem",
-                                p: "1rem",
+                                m: "0rem auto",
+                                p: "0.5rem",
+                                display: "flex",
                                 gridColumn: "span 4",
-                                backgroundColor: palette.primary.main,
+                                fontSize: "1.5rem",
+                                backgroundColor: "#ff79c6",
                                 color: palette.background.alt,
-                                "&:hover": { color: palette.primary.main }
+                                "&:hover": { color: "#ff79c6" }
                             }}
                         >
                             {isLogin ? "LOGIN" : "REGISTER"}
                         </Button>
+                        
                         <Typography
                             textAlign="center"
+                            fontSize="1.2rem"
                             onClick={() => {
                                 setPageType(isLogin ? "register" : "login");
                                 resetForm();
                             }}
                             sx={{
-                                textDecoration: "underline",
-                                color: palette.primary.main,
+                                textDecoration: "strikethrough",
+                                color: "#ff79c6",
                                 gridColumn: "span 4",
                                 "&:hover": {
                                     cursor: "pointer",
-                                    color: palette.primary.light,
+                                    color: "#b30065",
                                 },
                             }}
                         >

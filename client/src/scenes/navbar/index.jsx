@@ -36,7 +36,7 @@ const NavBar = () => {
     const neutralLight = theme.palette.neutral.light;
     const dark = theme.palette.neutral.dark;
     const background = theme.palette.background.default;
-    const primaryLight = theme.palette.primary.light;
+    //const primaryLight = theme.palette.primary.light;
     const alt = theme.palette.background.alt;
 
     const fullName = /*`${user.firstName} ${user.lastName}`*/'Fakeman';
@@ -59,18 +59,19 @@ const NavBar = () => {
             {/* Title */}
             <FlexBetween>
                 <Typography 
-                    fontWeight="bold" 
-                    fontSize="clamp(2rem, 3.5rem, 5rem)"
-                    color="primary"
+                    fontWeight="bold"
+                    fontFamily="monoco" 
+                    fontSize="clamp(2rem, 3rem, 4rem)"
+                    color="#ff79c6"
                     onClick={() => navigate("/home")}
                     sx={{
                         "&:hover": {
-                            color: primaryLight,
+                            color: "#db9fc1",
                             cursor: "pointer",
                         },
                     }}
                 >
-                    THE SOCIAL DUMP
+                    THE SOCIAL CLOG
                 </Typography>
             </FlexBetween>
 
@@ -155,7 +156,7 @@ const NavBar = () => {
                                 backgroundColor: neutralLight,
                                 width: "150px",
                                 borderRadius: "0.25rem",
-                                p: "0.25rem 1rem",
+                                p: "0.25rem 0.50rem",
                                 "& .MuiSvgIcon-root": {
                                     pr: "0.25rem",
                                     width: "3rem",

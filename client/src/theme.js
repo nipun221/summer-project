@@ -1,7 +1,7 @@
 // color design tokens export
 export const colorTokens = {
     grey: {
-      0: "#FFFFFF",
+      0: "#FFFFF0",
       10: "#F6F6F6",
       50: "#F0F0F0",
       100: "#E0E0E0",
@@ -10,8 +10,8 @@ export const colorTokens = {
       400: "#858585",
       500: "#666666",
       600: "#4D4D4D",
-      700: "#333333",
-      800: "#1A1A1A",
+      700: "#44475a",
+      800: "#363949",
       900: "#282A36",
       1000: "#000000",
     },

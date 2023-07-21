@@ -1,7 +1,5 @@
 import { Box, Typography, useTheme, useMediaQuery } from "@mui/material";
 import Form from "./Form";
-import { BorderColor } from "@mui/icons-material";
-import { borders } from "@mui/system";
 
 const LoginPage = () => {
     const theme = useTheme();
@@ -11,24 +9,25 @@ const LoginPage = () => {
         <Box>
             <Box width="100%" bacgroundColor={theme.palette.background.alt} p="1rem 6%" textAlign="center">
                 <Typography 
-                    fontWeight="bold" 
+                    fontWeight="bold"
+                    fontFamily="monoco" 
                     fontSize="clamp(2rem, 3.5rem, 5rem)"
-                    color="primary"
+                    color="#ff79c6"
                 >
-                    THE OPEN CLOG
+                    THE SOCIAL CLOG
                 </Typography>
             </Box>
             <Box>
-                <Typography fontWeight="500" variant="h3" align="center" sx={{ mb: "1.5rem" }}>
-                    Flush away the crap at The Social Dump - The social media platform for your shittiest posts!
+                <Typography fontWeight="300" variant="h3" align="center" sx={{ mb: "1.5rem" }}>
+                    Flush away the crap at The Social Clog - The social media platform for your shittiest posts!
                 </Typography>
             </Box>
             <Box 
                 width={isNonMobileScreens ? "30%" : "90%"} 
-                p="2rem" m="2rem auto" 
+                p="3rem" m="2rem auto" 
                 borderRadius="1.5rem" 
                 bacgroundColor={theme.palette.background.alt}
-                sx={{border: 5, borderColor: 'secondary.main'}}
+                sx={{border: 5, borderColor: '#ff79c6'}}
             >
                 <Form />
             </Box>
