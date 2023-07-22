@@ -250,7 +250,7 @@ const Form = () => {
                                 fontSize: "1.5rem",
                                 backgroundColor: "#ff79c6",
                                 color: palette.background.alt,
-                                "&:hover": { color: "#ff79c6", backgroundColor: "#44475a" }
+                                "&:hover": { color: "#ff79c6", backgroundColor: "#0A0A0A" }
                             }}
                         >
                             {isLogin ? "LOGIN" : "REGISTER"}
