@@ -14,7 +14,7 @@ const LoginPage = () => {
                     fontSize="clamp(2rem, 3.5rem, 5rem)"
                     color="#ff79c6"
                 >
-                    THE SOCIAL CLOG
+                    FAKE INSTAGRAM
                 </Typography>
             </Box>
             <Box>
